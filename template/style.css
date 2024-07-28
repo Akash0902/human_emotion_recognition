@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 48%;
+}
+
+.option-card h2 {
+    margin-top: 0;
+}
+
+.option-card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.option-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.docker-logo {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .options {
+        flex-direction: column;
+    }
+
+    .option-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Webcam Page Styles */
+.webcam-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1000px; /* Adjust width as needed */
+}
+
+.webcam-video, .webcam-capture {
+    width: 48%; /* Adjust width as needed */
+}
+
+video, canvas {
+    width: 100%; /* Make video and canvas responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    border: 2px solid #007BFF; /* Add border for visibility */
+}
+
+.webcam-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.control-button {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background: #0056b3;
+}
+
+.result-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background: #0056b3;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Webcam</title>
+    <link rel="stylesheet" href="template\style.css">
+    <script src="template\script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Use Webcam</h1>
+            <p>Capture an image using your webcam to detect emotions.</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="webcam-section">
+            <h2>Webcam</h2>
+            <div class="webcam-container">
+                <div class="webcam-video">
+                    <video id="webcam" autoplay></video>
+                </div>
+                <div class="webcam-capture">
+                    <canvas id="webcamCanvas"></canvas>
+                </div>
+            </div>
+            <div class="webcam-controls">
+                <button id="startWebcam" class="control-button">Start Webcam</button>
+                <button id="captureButton" class="control-button">Capture Image</button>
+            </div>
+        </section>
+        <section class="result-section">
+            <h2>Detected Emotion:</h2>
+            <p id="result">None</p>
+        </section>
+        <div class="navigation">
+            <a href="index.html" class="back-button">Back to Home</a>
+        </div>
+    </main>
+    
+</body>
+</html>

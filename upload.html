@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image for Emotion Recognition</title>
+    <link rel="stylesheet" href="template\style.css">
+    <script src="template\script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Upload Image</h1>
+            <p>Select an image to detect emotions.</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="upload-section">
+            <input type="file" id="fileInput" accept="image/*">
+            <button id="uploadButton">Upload Image</button>
+        </section>
+        <section class="result-section">
+            <h2>Detected Emotion:</h2>
+            <p id="result">None</p>
+        </section>
+    </main>
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+</body>
+</html>
